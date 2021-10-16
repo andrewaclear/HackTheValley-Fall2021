@@ -23,6 +23,23 @@
 
     <main>
       {% block main %}{% endblock %}
+      <div id="register-div">
+        <h1 id="register-title">Register</h1>
+
+        <form class="search" action="/register" method="post" class="input-form">
+            <div>
+                <input type="text" class="input-field" name="username" autocomplete="off" placeholder="Username">
+            </div>
+            <div>
+                <input type="password" class="input-field" name="password" autocomplete="off" placeholder="Password">
+            </div>
+            <div>
+                <input type="password" class="input-field" name="confirmation" autocomplete="off" placeholder="Confirm password">
+            </div>
+
+            <button class="btn-custom" type="submit">Register</button>
+        </form>
+    </div>
     </main>
   </body>
 
