@@ -2,9 +2,9 @@
     --bg_color: rgb(43, 43, 46);
     --bg_color-dark: rgb(37, 37, 39);
     --color: rgb(215, 226, 235);
-    --bubble_shadow: 2px 10px 13px rgba(0,0,0,0.2);
-    --bubble-radius: 10px;
-    --bubble-padding: 3px;
+    --bubble_shadow: 2px 10px 13px rgba(0,0,0,0.12);
+    --bubble-radius: 20px;
+    --bubble-padding: 10px;
     --bubble-margin: 17px;
     --nav-size: 6.2vh;
     --nav_shadow: 2px 10px 17px rgba(0,0,0,0.2);
@@ -40,11 +40,24 @@ main {
     position: relative;
 }
 
+usergroups {
+    /* text-align: left; */
+}
+
 user {
     box-shadow: var(--bubble_shadow);
     padding: var(--bubble-padding);
     margin: var(--bubble-margin);
     border-radius: var(--bubble-radius);
+    display: inline-block;
+    background-color: var(--bg_color-dark);
+    text-align: left;
+}
+user * {
+    display: inline-block;
+}
+user canvas {
+    display: flex;
 }
 
 nav {
@@ -92,3 +105,25 @@ button:active:hover {
 button:hover {
     box-shadow: var(--button-hover-shadow);
 } 
+
+img {
+    width: 7vh;
+    height: 7vh;
+    border-radius: 100%;
+}
+
+name {
+    padding: 4px;
+}
+
+script {
+    display: none;
+}
+
+score {
+    border-radius: 100%;
+    background-color: var(--button-color);
+    width: fit-content;
+    height: max-content;
+    padding: 5px;
+}

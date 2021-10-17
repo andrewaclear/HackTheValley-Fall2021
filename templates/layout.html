@@ -9,37 +9,55 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link type="text/css" rel="stylesheet" href="../static/style.css">
 
-    <title>digiscore</title>
-  </head>
-  <body>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
     <!--  -->
+
+    <title>digiscore</title>
+  </head>
+  <body>
 
     <nav>digiscore</nav>
 
     <main>
-      {% block main %}{% endblock %}
-      <div id="register-div">
-        <h1 id="register-title">Register</h1>
-
-        <form class="search" action="/register" method="post" class="input-form">
-            <div>
-                <input type="text" class="input-field" name="username" autocomplete="off" placeholder="Username">
-            </div>
-            <div>
-                <input type="password" class="input-field" name="password" autocomplete="off" placeholder="Password">
-            </div>
-            <div>
-                <input type="password" class="input-field" name="confirmation" autocomplete="off" placeholder="Confirm password">
-            </div>
-
-            <button class="btn-custom" type="submit">Register</button>
-        </form>
-    </div>
+      <!-- {% block main %}{% endblock %} -->
+      <usergroups>
+        <user>
+          <!-- <i class="bi-github" role="img" aria-label="GitHub"></i> -->
+          <img src="https://imgr.search.brave.com/vXvhB6tLsIYbIspoQvnpIq_OxOY0X1ZBLjnf4Sz0iig/fit/900/900/ce/1/aHR0cDovL3d3dy5l/bW1lZ2kuY28udWsv/d3AtY29udGVudC91/cGxvYWRzLzIwMTkv/MDEvVXNlci1JY29u/LmpwZw"></img>
+          <name>Andrew</name><score>23</score><canvas id="myChart"></canvas>
+          <script>
+          var ctx = document.getElementById('myChart');
+            var myChart = new Chart(ctx, {
+              type: 'bar',
+              data: {
+                  labels: ['work', 'game', 'offline', 'unallocated'],
+                  datasets: [{
+                    data: [12, 19, 3, 1],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                  }]
+              },
+              options: {
+                  scales: {
+                      y: {
+                          beginAtZero: true
+                      }
+                  }
+              }
+          });
+          </script>    
+        </user>
+      </usergroups>
     </main>
   </body>
 
