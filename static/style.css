@@ -133,6 +133,7 @@ img {
     width: 60px;
     height: 60px;
     border-radius: 100%;
+    background-color: rgb(202, 202, 202);
 }
 
 name {
