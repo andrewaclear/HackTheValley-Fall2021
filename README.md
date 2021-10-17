@@ -1,20 +1,21 @@
 # slacker tracker
 
 > author, front-end: *Andrew D'Amario* © 2021
+> 
 > back-end: *Aahil Samnani* © 2021
 
-We chose the HEATH ROUTE <img src="https://hackthevalley.io/static/b200ae58fa846b5ca436a8031cf8040e/416c3/factions-health.webp" style="zoom:5%;" />.
+We chose the [HEALTH ROUTE](https://hackthevalley.io/) ![](static/factions-health.png).
 
 *It will never leave you lacking, if you slacking, it be tracking, so get hacking!*
 
-Many of us (especially computer science students) suffer from spending too much time on the computer which is very bad for our health. Moreover, we often find ourselves waisting too much time on the computer gaming or doing something recreational like social media rather than the work we should be doing, and for some they work too much and don't take the breaks they should. *slacker tracker* is a Full-stack Web Application that helps you track the amount of time you spend, **working**, **gaming**, and **offline**. Using the optimal ranges (with respect to healthy living) of times we should be spending doing these things every week, *slacker tracker* helps you see if you have a healthy balanced life or not. When you are working on the computer, run the work timer. When you are gaming (recreating on the computer), run the game timer. When you are off the compter (the app is closed), it keeps track of your offline time. Lastly, to make sure you don't cheat you have an hour leeway of **unallocated** time when you are on your computer (app is open) but haven't started the game or work timer.
+Many of us (especially computer science students) suffer from spending too much time on the computer which is very bad for our health. Moreover, we often find ourselves waisting too much time on the computer gaming or doing something recreational like social media rather than the work we should be doing, and for some they work too much and don't take the breaks they should. *slacker tracker* is a Full-stack Web Application that helps you track the amount of time you spend, **working**, **gaming**, and **offline**. Using the optimal ranges (with respect to healthy living) of times we should be spending doing these things every week, *slacker tracker* helps you see if you have a healthy balanced life or not. When you are working on the computer, run the work timer. When you are gaming (recreating on the computer), run the game timer. When you are off the computer (the app is closed), it keeps track of your offline time. Lastly, to make sure you don't cheat you have an hour leeway of **unallocated** time when you are on your computer (app is open) but haven't started the game or work timer.
 
 If at the end of the week you have spent doing each of these things within the acceptable amount of time, your slacker tracker score increases, if not, it decreases. In this way you have an accountability with you friends in your group who can see how well (or not) you are doing this week, and how high or low your slacker tracker score is (how good you have been doing in general). So friends can help each other stay on track and live happier, healthier, and more balanced lives!
 
 
 ##### Front-end
 
-CSS/HTML API for user bubbles, buttons, header, registration page, and the interface elements.
+CSS/HTML API for user bubbles, buttons, header, registration page, and the interface elements. [Chart.js](https://www.chartjs.org/) for the bar graphs.
 
 ##### Back-end
 
