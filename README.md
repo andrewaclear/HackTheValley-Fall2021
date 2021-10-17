@@ -33,6 +33,8 @@ The backend was implemented using Python, Flask and SQLite. Users can create an 
 
 ![](static/scrnli_10_17_2021_2-39-56%20AM.png)
 
+![](static/scrnli_10_17_2021_2-59-10%20AM.png)
+
 
 ### Running 
 
